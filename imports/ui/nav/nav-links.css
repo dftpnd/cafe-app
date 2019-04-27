@@ -1,0 +1,39 @@
+.nav-links {
+    display: flex;
+    white-space: nowrap;
+}
+.nav-links:not(:last-child) {
+    padding-right: 2rem;
+}
+
+.nav-links__active a {
+    border-bottom: 7px solid var(--text-color-active) !important;
+}
+
+.nav-links a {
+    font-size: 18px;
+    color: var(--text-color);
+    text-decoration: none;
+    border-bottom: 7px solid transparent;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 500;
+}
+
+.nav-links a span::selection {
+    background-color: #f0ff1d;
+}
+
+.nav-links a:hover {
+    color: var(--text-color-active);
+}
+
+@media (max-width: 940px + (18px * 2)) {
+    .nav-links {
+        padding-right: 1.5rem;
+    }
+
+    .nav-links:first-child {
+        margin-left: 1rem;
+    }
+}

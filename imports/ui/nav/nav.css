@@ -1,0 +1,49 @@
+.menu_relative::selection {
+    color: transparent;
+    background: transparent;
+}
+
+.nav {
+    margin: -3rem auto 0;
+    position: relative;
+    z-index: 99;
+}
+
+.nav_scroll_border {
+    position: absolute;
+    top: 72px;
+    width: 100%;
+    border-bottom: 1px solid var(--text-color-active);
+}
+
+.nav__baloon {
+    width: 2rem;
+}
+
+.nav__scroll {
+    overflow-x: scroll;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.nav__scroll::-webkit-scrollbar {
+    display: none;
+}
+
+@media (overflow-inline: scroll) {
+    .pn-Advancer {
+        opacity: 1;
+    }
+}
+
+.nav__menu {
+    position: relative;
+    bottom: -2.3rem;
+}
+
+@media (max-width: 940px + (18px * 2)) {
+    .nav__menu { 
+        max-width: none;
+    }
+}

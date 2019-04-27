@@ -1,0 +1,51 @@
+
+.header__box {
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.header__wrapper {
+    width: 100%;
+    display: flex;
+    position: relative;
+    height: 12rem;
+}
+
+.header__number {
+    color: #000;
+    margin-top: 1rem;
+}
+
+.header__icon {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+}
+
+.header__logo {
+    padding-top: 2rem;
+}
+
+.header__info {
+    align-self: left;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    position: absolute;
+
+    
+}
+
+.header__info ul {
+    display: flex;
+    list-style: none;
+
+    
+}
+
+.header__info li:first-child {
+    margin-right: 0.5rem;
+}
